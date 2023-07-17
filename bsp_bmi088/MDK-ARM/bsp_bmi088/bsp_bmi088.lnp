@@ -1,0 +1,28 @@
+--cpu Cortex-M3
+"bsp_bmi088\startup_stm32f103xb.o"
+"bsp_bmi088\main.o"
+"bsp_bmi088\gpio.o"
+"bsp_bmi088\dma.o"
+"bsp_bmi088\usart.o"
+"bsp_bmi088\stm32f1xx_it.o"
+"bsp_bmi088\stm32f1xx_hal_msp.o"
+"bsp_bmi088\stm32f1xx_hal_gpio_ex.o"
+"bsp_bmi088\stm32f1xx_hal_tim.o"
+"bsp_bmi088\stm32f1xx_hal_tim_ex.o"
+"bsp_bmi088\stm32f1xx_hal_uart.o"
+"bsp_bmi088\stm32f1xx_hal.o"
+"bsp_bmi088\stm32f1xx_hal_rcc.o"
+"bsp_bmi088\stm32f1xx_hal_rcc_ex.o"
+"bsp_bmi088\stm32f1xx_hal_gpio.o"
+"bsp_bmi088\stm32f1xx_hal_dma.o"
+"bsp_bmi088\stm32f1xx_hal_cortex.o"
+"bsp_bmi088\stm32f1xx_hal_pwr.o"
+"bsp_bmi088\stm32f1xx_hal_flash.o"
+"bsp_bmi088\stm32f1xx_hal_flash_ex.o"
+"bsp_bmi088\stm32f1xx_hal_exti.o"
+"bsp_bmi088\system_stm32f1xx.o"
+"bsp_bmi088\bmi088.o"
+--strict --scatter "bsp_bmi088\bsp_bmi088.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "bsp_bmi088.map" -o bsp_bmi088\bsp_bmi088.axf
